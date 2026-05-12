@@ -1,2 +1,242 @@
-# my-project
-Github project
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    }
+</script>
+    body }
+</script>
+    { 
+      margin:0; 
+      font-family: Arial, sans-serif; 
+      background:#ffc0cb; /* 🌸 Soft pink background */
+      color:#000; 
+      line-height:1.6; 
+    }
+
+    header, footer, nav, section { padding:20px; text-align:center; }
+
+    header { 
+      padding:60px 20px; 
+      background:#ffb6c1; /* lighter pink header */
+    }
+
+    header img { 
+      width:150px; 
+      height:150px; 
+      border-radius:8px; 
+      border:2px solid #000; 
+      object-fit:cover; 
+    }
+
+    nav { 
+      position:sticky; 
+      top:0; 
+      background:#ff99aa; 
+      border-bottom:1px solid #000; 
+    }
+
+    nav a { 
+      color:#000; 
+      margin:0 10px; 
+      text-decoration:none; 
+      font-weight:bold; 
+    }
+
+    nav a:hover { color:#fff; }
+
+    h2 { 
+      border-bottom:2px solid #000; 
+      display:inline-block; 
+      margin-bottom:20px; 
+    }
+
+    .job, .project { 
+      background:#ffd6de; 
+      padding:15px; 
+      border-radius:6px; 
+      margin:15px auto; 
+      max-width:600px; 
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .project img, .project iframe { width:100%; border-radius:4px; }
+
+    .filter-btn { 
+      background:#ff99aa; 
+      color:#000; 
+      border:1px solid #000; 
+      padding:6px 12px; 
+      margin:5px; 
+      cursor:pointer; 
+      border-radius:4px; 
+    }
+
+    .filter-btn:hover { 
+      background:#fff; 
+      color:#000; 
+    }
+
+    footer { 
+      background:#ffb6c1; 
+      font-size:0.9rem; 
+      color:#000; 
+    }
+
+    .intro-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .intro-text {
+      text-align: center;
+      max-width: 500px;
+    }
+
+    .intro-image img {
+      border-radius: 8px;
+      border: 2px solid #000;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Intro -->
+  <header id="intro">
+    <div class="intro-container">
+      <div class="intro-image">
+        <a href="#"><img src="kc.jpg" alt="My Picture"></a>
+      </div>
+      <div class="intro-text">
+        <h2>Hello, Im Kassandra Nicole M. Bayking</h2>
+        <p>BSIT Student of Central Philippines State University (CPSU)</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#intro">Intro</a>
+    <a href="#about">About Me</a>
+    <a href="#experience">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Kassandra Nicole M. Bayking, a passionate BSIT student who loves creating functional and minimalist designs, and editing. I enjoy editing, making products, and reading when I have free time. </p>
+    
+    <h2>Skills</h2>
+    <p>Figma, Canva, Photoshop, C++, Website Design, Photo & Video Editing</p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Skills</h2>
+    <div class="timeline">
+      <div class="job">
+       <p>C++, CANVA, FIGMA, ADOBE PHOTOSHOP</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div style="text-align:center; margin-bottom:30px;">
+      <button class="filter-btn" onclick="filterProjects('all')">All</button>
+      <button class="filter-btn" onclick="filterProjects('youtube')">YouTube Tutorial</button>
+      <button class="filter-btn" onclick="filterProjects('school')">School Outputs</button>
+    </div>
+
+    <div class="project youtube">
+      <iframe src="https://www.youtube.com/embed/NZMPyx1fCgk" frameborder="0" allowfullscreen></iframe>
+      <h3>Video Project One</h3>
+      <p>My YouTube video project about coding.</p>
+    </div>
+
+    <div class="project school">
+    	 <a href="https://www.canva.com/design/DAGvdZC8OV4/h9SsuoqT5M1vbzNBKchQNA/edit?utm_content=DAGvdZC8OV4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton/"target="_blank"> <img src="canva.jpg" alt="School Project"></a>
+      <h3>CANVA PORTFOLIO</h3>
+    
+       <a href="https://www.figma.com/proto/ijpQ9dUGlvaWJGZ08fZwOD/BAYKING?t=flcu9bYLhD7msj4n-1/"target="_blank"> <img src="figma.jpg" alt="School Project"></a>
+      <h3>FIGMA PORTFOLIO</h3>
+      
+       <a href="https://www.figma.com/proto/WM61ARdBPJb16eJ2kCpgVH/Untitled?t=flcu9bYLhD7msj4n-1/"target="_blank"> <img src="figma.jpg" alt="School Project"></a>
+      <h3>FIGMA E-COMMERCE</h3>
+    
+    </div>
+  </section>
+
+  <div id="certificate" class="section">    
+  <div class="title"><i class="fas fa-award"></i> Certificates</div>    
+  <div class="photo-grid">  
+    <div class="photo-card">
+      <img src="/rox/IMG_20260412_172617.jpg" alt="Certificate 1">
+      <div class="cert-info">
+        <span class="cert-title">IT Seminar Participation</span>
+        <span class="cert-date">March 05, 2026</span>
+      </div>
+    </div>  
+    <div class="photo-card">
+      <img src="" alt="Certificate 2">
+      <div class="cert-info">
+        <span class="cert-title">Cisco Networking Fundamentals</span>
+        <span class="cert-date">March 12, 2026</span>
+      </div>
+    </div>  
+    <div class="photo-card">
+      <img src="" alt="Certificate 3">
+      <div class="cert-info">
+        <span class="cert-title">Integrative Foundation...</span>
+        <span class="cert-date">March 10, 2026</span>
+      </div>
+    </div>
+  </div>  
+</div>    
+
+  <script>
+    function filterProjects(category) {
+      let projects = document.querySelectorAll('.project');
+      projects.forEach(project => {
+        project.style.display = (category === 'all' || project.classList.contains(category)) ? 'block' : 'none';
+      });
+    }
+  </script>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email:kassandranicolebayking@gmail.com</p>
+    <p>Number: 09927181384
+    </p>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 [KASSANDRA NICOLE M. BAYKING]. All rights reserved.</p>
+  </footer>
+
+</body>
