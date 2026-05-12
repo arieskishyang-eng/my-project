@@ -16,45 +16,37 @@
       color:#000; 
       line-height:1.6; 
     }
-
-    header, footer, nav, section { padding:20px; text-align:center; }
-
-    header { 
+      header, footer, nav, section { padding:20px; text-align:center; }
+      header { 
       padding:60px 20px; 
       background:#ffb6c1; /* lighter pink header */
     }
-
-    header img { 
+       header img { 
       width:150px; 
       height:150px; 
       border-radius:8px; 
       border:2px solid #000; 
       object-fit:cover; 
     }
-
-    nav { 
+       nav { 
       position:sticky; 
       top:0; 
       background:#ff99aa; 
       border-bottom:1px solid #000; 
     }
-
-    nav a { 
+      nav  { 
       color:#000; 
       margin:0 10px; 
       text-decoration:none; 
       font-weight:bold; 
     }
-
-    nav a:hover { color:#fff; }
-
-    h2 { 
+      nav :hover { color:#fff; }
+      h2 { 
       border-bottom:2px solid #000; 
       display:inline-block; 
       margin-bottom:20px; 
     }
-
-    .job, .project { 
+      .job, .project { 
       background:#ffd6de; 
       padding:15px; 
       border-radius:6px; 
@@ -62,10 +54,8 @@
       max-width:600px; 
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    .project img, .project iframe { width:100%; border-radius:4px; }
-
-    .filter-btn { 
+     project img, .project iframe { width:100%; border-radius:4px; }
+      filter-btn { 
       background:#ff99aa; 
       color:#000; 
       border:1px solid #000; 
@@ -74,53 +64,46 @@
       cursor:pointer; 
       border-radius:4px; 
     }
-
-    .filter-btn:hover { 
+       filter-btn:hover { 
       background:#fff; 
       color:#000; 
     }
-
-    footer { 
+      footer { 
       background:#ffb6c1; 
       font-size:0.9rem; 
       color:#000; 
     }
-
-    .intro-container {
+      intro-container {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 30px;
       flex-wrap: wrap;
     }
-
-    .intro-text {
+      intro-text {
       text-align: center;
       max-width: 500px;
     }
-
-    .intro-image img {
+      intro-image img {
       border-radius: 8px;
       border: 2px solid #000;
       width: 200px;
       height: 200px;
       object-fit: cover;
     }
-
-    .projects {
+      projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
-
-    .project:hover {
+      project:hover {
       transform: translateY(-5px);
       box-shadow: 0 0 15px rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
-
+ 
   <!-- Intro -->
   <header id="intro">
     <div class="intro-container">
@@ -147,7 +130,6 @@
   <section id="about">
     <h2>About Me</h2>
     <p>Hello! I'm Kassandra Nicole M. Bayking, a passionate BSIT student who loves creating functional and minimalist designs, and editing. I enjoy editing, making products, and reading when I have free time. </p>
-    
     <h2>Skills</h2>
     <p>Figma, Canva, Photoshop, C++, Website Design, Photo & Video Editing</p>
   </section>
@@ -170,24 +152,19 @@
       <button class="filter-btn" onclick="filterProjects('youtube')">YouTube Tutorial</button>
       <button class="filter-btn" onclick="filterProjects('school')">School Outputs</button>
     </div>
-
-    <div class="project youtube">
+     <div class="project youtube">
       <iframe src="https://www.youtube.com/embed/NZMPyx1fCgk" frameborder="0" allowfullscreen></iframe>
       <h3>Video Project One</h3>
       <p>My YouTube video project about coding.</p>
     </div>
-
     <div class="project school">
     	 <a href="https://www.canva.com/design/DAGvdZC8OV4/h9SsuoqT5M1vbzNBKchQNA/edit?utm_content=DAGvdZC8OV4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton/"target="_blank"> <img src="canva.jpg" alt="School Project"></a>
       <h3>CANVA PORTFOLIO</h3>
-    
-       <a href="https://www.figma.com/proto/ijpQ9dUGlvaWJGZ08fZwOD/BAYKING?t=flcu9bYLhD7msj4n-1/"target="_blank"> <img src="figma.jpg" alt="School Project"></a>
+    <a href="https://www.figma.com/proto/ijpQ9dUGlvaWJGZ08fZwOD/BAYKING?t=flcu9bYLhD7msj4n-1/"target="_blank"> <img src="figma.jpg" alt="School Project"></a>
       <h3>FIGMA PORTFOLIO</h3>
-      
-       <a href="https://www.figma.com/proto/WM61ARdBPJb16eJ2kCpgVH/Untitled?t=flcu9bYLhD7msj4n-1/"target="_blank"> <img src="figma.jpg" alt="School Project"></a>
+      <a href="https://www.figma.com/proto/WM61ARdBPJb16eJ2kCpgVH/Untitled?t=flcu9bYLhD7msj4n-1/"target="_blank"> <img src="figma.jpg" alt="School Project"></a>
       <h3>FIGMA E-COMMERCE</h3>
-    
-    </div>
+      </div>
   </section>
 
   <div id="certificate" class="section">    
